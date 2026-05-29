@@ -9,6 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.13.0"
+    "@astrojs/react": "^4.3.0",
+    "astro": "^5.13.0",
+    "nodemailer": "^7.0.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@astrojs/vercel": "^8.0.4",
+    "@tailwindcss/vite": "^4.1.12",
+    "tailwindcss": "^4.1.12"
   }
 }

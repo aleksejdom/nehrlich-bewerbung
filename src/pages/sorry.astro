@@ -1,0 +1,17 @@
+---
+// src/pages/erfolg.astro
+import LandingPageLayout from "../layouts/LandingPageLayout.astro"; 
+import sorryImage from "../assets/sorry.svg";
+---
+<LandingPageLayout> 
+  <section class="bg-zinc-100 rounded-2xl shadow p-10 text-center w-full h-full flex flex-col items-center justify-center">
+    <img src={sorryImage.src} alt="Erfolg" class="w-full h-50 mb-6" />
+    <h1 class="text-3xl font-semibold text-red-700 mb-3">Es tut uns leid.</h1>
+    <p class="text-gray-600">
+      Leider passen deine Angaben aktuell nicht zu den Voraussetzungen für die Stelle.
+    </p>
+    <div class="mt-6 text-sm text-gray-400">
+      <a href="/bewerbung?page=1" class="underline mr-4">Nochmal Probieren</a>
+    </div>
+  </section>
+</LandingPageLayout>

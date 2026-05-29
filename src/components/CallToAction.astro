@@ -1,0 +1,18 @@
+---
+import Button from "./Button.astro";
+const { ctaLink, ctaText } = Astro.props;
+---
+
+<section class="bg-zinc-300 w-full py-15">
+  <div class="w-full max-w-[630px] m-auto px-9 flex flex-col justify-center items-center text-center">
+    <h3>Klingt nach deinem Traumjob?</h3>
+    <Button
+      btn_title={ctaText}
+      btn_link={ctaLink}
+    ></Button>
+    <a href="mailto:info@nehrlich.eu" class="flex flex-col mt-8">
+      <p class="text-l flex gap-2 items-center">Oder schicke uns deine Bewerbung per E-Mail: info@nehrlich.eu</p>
+    </a>
+  </div>
+</section>
+

@@ -1,0 +1,18 @@
+---
+// src/pages/erfolg.astro
+import LandingPageLayout from "../layouts/LandingPageLayout.astro"; 
+import sucessImage from "../assets/success.svg";
+---
+<LandingPageLayout> 
+  <section class="bg-zinc-100 rounded-2xl shadow p-10 text-center w-full h-full flex flex-col items-center justify-center">
+    <img src={sucessImage.src} alt="Erfolg" class="w-full h-50 mb-6" />
+    <h1 class="text-3xl font-semibold text-green-700 mb-3">Bewerbung erfolgreich!</h1>
+    <p class="text-gray-600">
+      Vielen Dank. Deine Bewerbung ist erfolgreich bei uns eingegangen.<br />
+      Wir werden deine Daten prüfen und uns schnellstmöglich bei dir zurückmelden.
+    </p>
+    <div class="mt-6 text-sm text-gray-400">
+      <a href="https://nehrlich.eu/impressum-datenschutz/" class="impressum" target="_blank">Impressum / Datenschutz</a> 
+    </div>
+  </section>
+</LandingPageLayout>

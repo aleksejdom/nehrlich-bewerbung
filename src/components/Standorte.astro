@@ -1,0 +1,82 @@
+---
+import carIcon from "../assets/car.svg";
+import treesIcon from "../assets/trees.svg";
+import coffeeIcon from "../assets/coffee.svg";
+import teamIcon from "../assets/users-group.svg";
+import iconBus from "../assets/bus.svg";
+import iconOldCity from "../assets/oldcity.svg";
+
+const benefits_tuebingen = [
+  {
+    icon: carIcon,
+    text: "Sehr gute Anbindung: Bequem erreichbar mit Bus/Bahn und Auto; kurze Wege von Haltestellen zur Praxis"
+  },
+  {
+    icon: iconOldCity,
+    text: "Pause mit Qualität: Grüne Umgebung mit Altstadtflair – Neckar, Parks und Cafés sind nur wenige Schritte entfernt"
+  },
+  {
+    icon: coffeeIcon,
+    text: "Viele Cafés und Restaurants in der Nähe - Ideal für eine entspannte Mittagspause"
+  }
+]
+
+const benefits_rottenburg = [
+  {
+    icon: carIcon,
+    text: "Zentrale Lage: Schnell erreichbar aus Rottenburg und den Teilorten"
+  },
+  {
+    icon: teamIcon,
+    text: "Inspirierende Arbeitsatmosphäre – Der Standort in Rottenburg überzeugt mit modernen Therapieräumen und einem engagierten Team"
+  },
+  {
+    icon: treesIcon,
+    text: "Ruhige Umgebung Nahe der Stadt, mit Möglichkeiten für kurze Spaziergänge in der Natur"
+  }
+]
+---
+
+<section class="bg-white w-full">
+  <div class="container">
+    <h3>Unsere Standorte</h3>
+    <div class="mt-10 p-8 bg-gray-100 rounded-lg shadow-sm gap-20 flex flex-col">
+      <div class="flex gap-10 items-center justify-center md:flex-row flex-col">
+        <div class="standort-description w-full md:w-1/2">
+          <h4>Tübingen</h4>
+          <p class="mt-1 max-w-[500px]">Ruhig und zugleich mitten im Leben – optimale Bedingungen für konzentriertes Arbeiten und erholsame Pausen.</p>
+          <div class="mt-8">
+            {benefits_tuebingen.map((benefit) => (
+              <div class="flex items-start gap-4 mt-4 border-b pb-4 border-gray-200 last:border-none">
+                <img src={benefit.icon.src} alt="Icon" class="w-6 h-6 mt-1" />
+                <span class="m-0 max-w-[350px]">{benefit.text}</span> 
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="pointer-events-none w-full md:w-1/2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.461743202555!2d9.048249376653443!3d48.50432412555775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799fad1c37b24a1%3A0x9ba66a1ab5df5088!2sPraxis%20Nehrlich%20T%C3%BCbingen!5e1!3m2!1sde!2sde!4v1755590678351!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="flex gap-10 md:flex-row-reverse items-center justify-center flex-col">
+        <div class="standort-description w-full md:w-1/2">
+          <h4>Rottenburg am Neckar</h4>
+          <p class="mt-1 max-w-[500px]">Übersichtlich, gut angebunden und entspannt – perfekt für einen Alltagsrhythmus ohne Großstadtstress.</p>
+          <div class="mt-8">
+            {benefits_rottenburg.map((benefit) => (
+              <div class="flex items-start gap-4 mt-4 border-b pb-4 border-gray-200 last:border-none">
+                <img src={benefit.icon.src} alt="Icon" class="w-6 h-6 mt-1" />
+                <span class="m-0 max-w-[350px]">{benefit.text}</span> 
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="pointer-events-none w-full md:w-1/2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6068.312098332009!2d8.932!3d48.476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799fdb4d00b1a77%3A0x6130fb9f9151dd95!2sPraxis%20Nehrlich%20Rottenburg!5e1!3m2!1sde!2sde!4v1755591643601!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 

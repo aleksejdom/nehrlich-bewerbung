@@ -1,0 +1,96 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" /> 
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="Praxis Nehrlich" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<meta name="description" content="Stelle als Ergotherapeut (m/w/d) in unserer Praxis in Tübingen und Rottenburg am Neckar." />
+		<meta name="keywords" content="Ergotherapeut, Bewerbung, Stelle, Praxis Nehrlich, Job, Stellenangebot, Ergotherapie" />
+		<meta name="author" content="Praxis Nehrlich" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Stelle als Ergotherapeut (m/w/d)</title>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8X8V9BJKW5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-8X8V9BJKW5');
+		</script>
+		<!-- Meta Pixel Code --> 
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '742324188972770');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=742324188972770&ev=PageView&noscript=1"
+		/></noscript>  
+		<!-- End Meta Pixel Code -->
+		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6b35870b-b9a7-4704-839b-090c3a9c4fef" data-blockingmode="auto" type="text/javascript"></script>
+		<script data-cookieconsent="ignore">
+				window.dataLayer = window.dataLayer || [];
+				function gtag() {
+						dataLayer.push(arguments);
+				}
+				// EU-specific settings
+				gtag('consent', 'default', {
+						'ad_personalization': 'denied',
+						'ad_storage': 'denied',
+						'ad_user_data': 'denied',
+						'analytics_storage': 'denied',
+						'functionality_storage': 'denied',
+						'personalization_storage': 'denied',
+						'region': [
+							'GB','AT','BE','BG','CH','CY','DE','DK','EE','ES','FI',
+							'FR','GG','GR','HR','HU','IE','IM','IT','JE','LT','LU',
+							'LV','MT','NL','PL','PT','RO','SE','SI','SK'
+						],
+						'wait_for_update': 500,
+				});
+				// Default settings
+				gtag('consent', 'default', {
+						'ad_personalization': 'granted',
+						'ad_storage': 'granted',
+						'ad_user_data': 'granted',
+						'analytics_storage': 'granted',
+						'functionality_storage': 'granted',
+						'personalization_storage': 'granted',
+						'security_storage': 'granted',
+						'wait_for_update': 500,
+				});
+				gtag('set', 'ads_data_redaction', true);
+				gtag('set', 'url_passthrough', false);
+		</script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

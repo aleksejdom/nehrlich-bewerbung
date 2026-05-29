@@ -1,0 +1,61 @@
+---
+import Button from "./Button.astro";
+import caroline from "../assets/ma-nm.jpg";
+
+const { ctaLink, ctaText } = Astro.props;
+---
+
+<section class="bg-zinc-300 w-full"> 
+  <div class="container flex gap-20 justify-between md:flex-row flex-col items-center">
+    <div class="text w-full md:w-1/2">
+      <h3 class="mb-2 text-5xl font-semibold mb-4 flex flex-col">Du hast noch Fragen?</h3>
+      <p class="max-w-[500px] text-lg mb-5">
+        Kein Problem! Unser Team steht dir gerne für alle Anliegen rund um die Bewerbung oder die Stelle zur Verfügung.	
+      </p>
+      <Button
+        btn_title="Kontakt aufnehmen"
+        btn_link="mailto:info@nehrlich.eu"
+        color="bg-zinc-700"
+      />
+      <Button
+        btn_title="Jetzt bewerben"
+        btn_link={ctaLink} 
+      />
+    </div>
+    <div class="flex flex-col justify-center items-center w-full md:w-fit p-10 md:px-20 px-10 bg-zinc-100 shadow-sm rounded-xl">
+      <img src={caroline.src} alt="Kontaktperson" class="w-full h-full rounded-full mb-3 object-cover max-w-[200px]">
+      <p class="text-xl font-semibold text-center">Nicole Maier</p>
+      <p class="text-sm text-center">Fachliches Leitungsteam</p>
+      <hr class="h-sm text-zinc-300 w-20 mt-8 mb-2" />
+      <div class="flex flex-col mt-5"> 
+        <a href="tel:0123456789" class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 text-zinc-600">
+            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+          </svg> 
+          <p class="phone">07071 – 943 83 80</p>
+        </a>
+        <a href="mailto:info@nehrlich.eu" class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 text-zinc-600">
+            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+          </svg> 
+          info@nehrlich.eu
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bg-zinc-600 flex flex-col justify-center items-center text-white p-10">
+  <!-- <img src={placeholder.src} alt="Kontaktperson" class="w-32 h-32 rounded-full">  -->
+  <p class="copyrigh mb-4 text-gray-300">© 2025 Praxis Nehrlich</p>
+  <hr class="h-sm text-zinc-500 w-20" />
+  <div class="links flex gap-4 text-sm mt-2">
+    <a href="https://nehrlich.eu/impressum-datenschutz/" class="impressum" target="_blank">Impressum / Datenschutz</a> 
+  </div>
+  <p class="text-sm text-gray-400 mt-2">Created by <a href="https://itaerzte.de" class="nehrlich-link">IT Ärzte GmbH</a></p>
+</div>
+</div>
+
+    
+ 

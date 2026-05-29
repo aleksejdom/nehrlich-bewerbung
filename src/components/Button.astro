@@ -1,0 +1,61 @@
+---
+const { btn_title, btn_link, color } = Astro.props;
+// Fallback-Farbe, falls keine angegeben ist
+const btnColor = color || "bg-blue-600";
+---
+
+<a
+  href={btn_link}
+  class={`btn-primary relative inline-flex items-center justify-center px-6 py-3 text-white rounded-full mt-5 w-fit ${btnColor}`}
+>
+  {btn_title}
+</a>
+
+<style>
+  .btn-primary {  
+    --mint: #34d399;
+    position: relative;
+    overflow: visible;
+  }
+
+  /* Kreispuls */
+  .btn-primary::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;  
+    height: 60px;
+    margin-left: -30px;  
+    margin-top: -30px;
+    border-radius: 50%;
+    border: 2px solid var(--mint);
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+    animation: ring-cycle 6s ease-out infinite;
+  } 
+
+  @keyframes ring-cycle {
+    0%, 33% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    34%   { opacity: 0.6; transform: scale(1); }
+    40%   { opacity: 0; transform: scale(1.4); }
+    44%   { opacity: 0.6; transform: scale(1); }
+    50%   { opacity: 0; transform: scale(1.4); }
+    54%   { opacity: 0.6; transform: scale(1); }
+    60%   { opacity: 0; transform: scale(1.4); }
+    64%   { opacity: 0.6; transform: scale(1); }
+    70%   { opacity: 0; transform: scale(1.4); }
+    71%, 100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+
+  .btn-primary:hover {
+    filter: brightness(0.9);
+  }
+</style>

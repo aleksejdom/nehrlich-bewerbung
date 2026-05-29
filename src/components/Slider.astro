@@ -1,0 +1,71 @@
+---
+import image_1 from "../assets/working-2.jpg";
+import image_3 from "../assets/working-3.jpg";
+import image_4 from "../assets/working-4.jpg";
+import image_5 from "../assets/working-5.jpg";
+import image_6 from "../assets/working-6.jpg";
+import image_7 from "../assets/working-7.jpg";
+---
+
+<div class="slider-block w-full md:w-1/2">
+  <div class="relative">
+    <!-- Text-Overlay über allen Slides -->
+    <p class="pointer-events-none absolute left-8 bottom-8 z-20 md:leading-9 leading-5 text-white md:max-w-[400px] max-w-[200px] drop-shadow">
+      Entspannt arbeiten - erfolgreich therapieren.
+    </p>
+
+    <div class="overlay rounded-2xl"></div>
+
+    <!-- Swiper Web Component -->
+    <swiper-container
+      class="slider-block block w-full h-[250px] md:h-[350px] rounded-2xl shadow-sm overflow-hidden"
+      slides-per-view="1"
+      loop="true"
+      pagination="true"
+      navigation="true"
+      autoplay-delay="4000"
+      autoplay-disable-on-interaction="false"
+    >
+      <!-- Deine Slides -->
+      <swiper-slide>
+        <img src={image_1.src} alt="Ergotherapie" class="w-full h-full object-cover" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src={image_4.src} alt="Ergotherapie" class="w-full h-full object-cover" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src={image_6.src} alt="Ergotherapie" class="w-full h-full object-cover" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src={image_7.src} alt="Ergotherapie" class="w-full h-full object-cover" />
+      </swiper-slide>
+
+      <!-- Eigene Navigation & Pagination als Tags über Slots einhängen -->
+      <div class="swiper-button-prev" slot="container-end"></div>
+      <div class="swiper-button-next" slot="container-end"></div>
+      <div class="swiper-pagination" slot="container-end"></div>
+    </swiper-container>
+  </div>
+</div>
+
+<!-- Registriert die Web Components (kein Bundling nötig) -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<style>
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+    z-index: 10;
+    pointer-events: none; /* blockiert keine Interaktionen */
+  }
+  .slider-block p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    max-width: 300px;
+  }
+ 
+
+</style>

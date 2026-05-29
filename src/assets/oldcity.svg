@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 30.9 30">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polyline class="st0" points="9.6 13.2 5.4 13.2 2.4 17.3 3.5 17.3 9.6 17.3"/>
+  <polyline class="st0" points="3.1 17.3 3.1 28.7 9.6 28.7"/>
+  <rect x="5.4" y="22.5" width="1.9" height="1.9"/>
+  <polyline class="st0" points="15.5 28.7 21.4 28.7 21.4 9.3 15.5 2.2 9.6 9.3 9.6 28.7 15.5 28.7"/>
+  <polyline class="st0" points="21.4 13.2 25.6 13.2 28.6 17.3 27.5 17.3 21.4 17.3"/>
+  <polyline class="st0" points="27.9 17.3 27.9 28.7 21.4 28.7"/>
+  <polyline class="st0" points="17.5 28.7 17.5 22 15.5 22 13.6 22 13.6 28.7"/>
+  <rect x="23.7" y="22.5" width="1.9" height="1.9"/>
+  <circle class="st0" cx="15.5" cy="12.9" r="2.7"/>
+</svg>
